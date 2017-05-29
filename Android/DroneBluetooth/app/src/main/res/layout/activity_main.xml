@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Connexion Bluetooth"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff0a14ff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <TextView
+            android:layout_width="316dp"
+            android:layout_height="45dp"
+            android:text="Voulez vous connecter le serveur ou le client Bluetooth ?"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONNECTER SERVEUR"
+            android:id="@+id/buttonConnecterserveur"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONNECTER CLIENT"
+            android:id="@+id/buttonConnecterclient"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="309dp"
+            android:layout_height="wrap_content"
+            android:text="* ATTENTE CONNEXION SERVEUR *"
+            android:id="@+id/textView3"
+            android:visibility="invisible"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* ATTENTE CONNEXION CLIENT *"
+            android:id="@+id/textView4"
+            android:visibility="invisible"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutBT">
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

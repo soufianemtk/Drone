@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DroneAndroid</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="buttonConnect">Connect</string>
+    <string name="title_activity_commandes_drone">CommandesDrone</string>
+</resources>
